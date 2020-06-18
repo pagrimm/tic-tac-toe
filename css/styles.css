@@ -87,10 +87,24 @@ tbody {
   border-radius: 0rem;
 }
 
+@media only screen and (max-width: 1199px) {
+  .space-text {
+    top: 18%
+  }
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+  .space-text {
+    top: 3%
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .player-section{
     margin-bottom: 0px;
     margin-top: 10px;
+  }
+  .space-text {
+    top: 10%
   }
 }
