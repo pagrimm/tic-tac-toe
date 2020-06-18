@@ -1,0 +1,22 @@
+.player-icon {
+  font-size: 5em;
+  text-align: center;
+}
+
+.player-section{
+  margin-bottom:20px;
+}
+
+.space {
+  float:left;
+    width: 30%;
+    padding-bottom: 26.55%;
+    margin:1.66%;
+    background-color: #222;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    max-width: 720px;
+  }
+}
