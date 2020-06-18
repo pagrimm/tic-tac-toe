@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .container {
   min-width: 540px;
 }
@@ -13,6 +17,20 @@
 
 .delete {
   text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.cats-game {
+  color: #F39C12;
+}
+
+.player0-color {
+  color: #E74C3C;
+}
+
+.player1-color {
+  color: #3498DB;
 }
 
 .player-section{

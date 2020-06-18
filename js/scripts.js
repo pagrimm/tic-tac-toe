@@ -118,12 +118,12 @@ function displayTurn(turn) {
 
 function displayWinner (game) {
   console.log(game.winner);
-  $(".game-board").after("<p class=\"delete\">Player " + (game.turn + 1) + " wins!")
+  $(".game-board").after("<p class=\"delete player" + game.turn + "-color\">Player " + (game.turn + 1) + " wins!")
   document.querySelector("p.delete").scrollIntoView({behavior: 'smooth'});
 }
 
 function displayCatsGame () {
-  $(".game-board").after("<p class=\"delete\">Cat's game!</p>")
+  $(".game-board").after("<p class=\"delete cats-game\">Cat's game!</p>")
   document.querySelector("p.delete").scrollIntoView({behavior: 'smooth'});
 }
 
