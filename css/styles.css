@@ -1,5 +1,17 @@
+.container {
+  min-width: 540px;
+}
+
+.button-area {
+  text-align: center;
+}
+
 .player-icon {
   font-size: 5em;
+  text-align: center;
+}
+
+.delete {
   text-align: center;
 }
 
@@ -7,13 +19,74 @@
   margin-bottom:20px;
 }
 
-.space {
-  float:left;
-    width: 30%;
-    padding-bottom: 26.55%;
-    margin:1.66%;
-    background-color: #222;
+.game-container-body {
+  padding-left: 70px;
 }
+
+.game-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.space-text {
+  font-size: 5em;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  position: relative;
+  float: left;
+  border: 5px solid #303030;
+  width: 32%;
+  padding-bottom: 32%;
+  background-color: #222;
+}
+
+td div {
+  position: absolute;
+  top: 25%;  
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+table {
+  display: block; width: 100%; 
+  display: table;
+  vertical-align: middle;
+}
+
+tr { 
+  display: table-row;
+  width: 100%; 
+}
+
+tbody { 
+  display: block; width: 100%; 
+}
+
+.player0-active {
+  outline: 4px solid #E74C3C;
+  outline-offset: -4px;
+  background-clip: border-box;
+}
+
+.player0-active .card-header:first-child {
+  border-radius: 0rem;
+}
+
+.player1-active {
+  outline: 4px solid #3498DB;
+  outline-offset: -4px;
+  background-clip: border-box;
+}
+
+.player1-active .card-header:first-child {
+  border-radius: 0rem;
+}
+
 
 @media only screen and (max-width: 768px) {
   .player-section{

@@ -16,36 +16,45 @@
   </header>
   <div class="row">
     <div class="col-md-8">
-      <section class="card bg-dark">
+      <section class="game-board card bg-dark">
         <div class="card-header">Game board</div>
-        <div class="card-body">
-          <div class="game-container">
-            <div id="02" class="space">1 x0y2</div>
-            <div id="12" class="space">2 x1y2</div>
-            <div id="22" class="space">3 x2y2</div>
-            <div id="01" class="space">4 x0y1</div>
-            <div id="11" class="space">5 x1y1</div>
-            <div id="21" class="space">6 x2y1</div>
-            <div id="00" class="space">7 x0y0</div>
-            <div id="10" class="space">8 x1y0</div>
-            <div id="20" class="space">9 x2y0</div>
-          </div>
+        <div class="card-body game-container-body">
+          <table class="game-container">
+            <tr class="row my-auto">
+              <td id="02" class="space"><div class="space-text"></div></div>
+              <td id="12" class="space"><div class="space-text"></div></div>
+              <td id="22" class="space"><div class="space-text"></div></div>
+            </tr>
+            <tr class="row">
+              <td id="01" class="space"><div class="space-text"></div></div>
+              <td id="11" class="space"><div class="space-text"></div></div>
+              <td id="21" class="space"><div class="space-text"></div></div>
+            </tr>
+            <tr class="row">
+              <td id="00" class="space"><div class="space-text"></div></div>
+              <td id="10" class="space"><div class="space-text"></div></div>
+              <td id="20" class="space"><div class="space-text"></div></div>
+            </tr>
+          </table>
         </div>
       </section>
     </div>
     <div class="col-md-4">
-      <section class="card bg-dark player-section">
+      <section id="player0-section" class="card bg-dark player-section">
         <div class="card-header bg-danger">Player 1</div>
         <div class="card-body player-icon text-danger">
           <i class="fas fa-times"></i>
         </div>
       </section>
-      <section class="card bg-dark player-section">
+      <section id="player1-section" class="card bg-dark player-section">
         <div class="card-header bg-info">Player 2</div>
         <div class="card-body player-icon text-info">
           <i class="fas fa-circle"></i>
         </div>
       </section>
+      <div class="button-area">
+        <button id="reset-button" class="btn btn-secondary" type="button">Reset Game</button>
+      </div>
     </div>
   </div>
 </body>
