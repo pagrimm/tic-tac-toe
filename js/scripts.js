@@ -26,7 +26,7 @@ function Game(turn, winner, board) {
 
 Board.prototype.addMark = function(x, y, turn) {
   if (turn === 0) {
-    this[x][y].mark = "x";  //$("#("this[x].concat[y]")".addClass("fas fa-times"));
+    this[x][y].mark = "x"; 
   } else{
     this[x][y].mark = "o";
   }
@@ -127,6 +127,15 @@ function displayCatsGame () {
   document.querySelector("p.delete").scrollIntoView({behavior: 'smooth'});
 }
 
+function resetPage () {
+  $(".space-text").each(function () {
+    $(this).text("");
+  });
+  $(".delete").each(function () {
+    $(this).remove();
+  });
+}
+
 $(document).ready(function(){
   let board = new Board(3);
   let game = new Game(0, false, board);
@@ -154,12 +163,7 @@ $(document).ready(function(){
   $("#reset-button").click(function () {
     board = new Board(3);
     game = new Game(0, false, board);
-    $(".space-text").each(function () {
-      $(this).text("");
-    });
-    $(".delete").each(function () {
-      $(this).remove();
-    });
+    resetPage();
     displayTurn(game.turn);
   });
 });
